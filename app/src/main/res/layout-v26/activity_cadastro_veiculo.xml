@@ -144,7 +144,7 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:background="#C0C0C0"
-        android:text="regitrar veículo"
+        android:text="registrar veículo"
         android:textColor="#000000" />
 
 

@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.zxing.qrcode.encoder.QRCode;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(email.isEmpty()){
 
-            Toast.makeText(this, "Insira pelo menos o e-mail para recuperar senha!!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Insira pelo menos o e-mail para recuperar a senha.", Toast.LENGTH_LONG).show();
 
         }else {
 
@@ -108,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onSuccess(Void aVoid) {
 
-                Toast.makeText(getBaseContext(), "Enviamos uma MSG para o e-mail  informado acima!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "Enviamos uma mensagem para o e-mail cadastrado acima.", Toast.LENGTH_LONG).show();
 
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -142,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }else {
 
-                Toast.makeText(this, "Erro - Verifique sua WIffi ou 3g esta Bugada!!!!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Certifique-se de que seu dispositivo está conectado a internet.", Toast.LENGTH_LONG).show();
             }
 
         }
@@ -155,8 +156,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     // se login ok, ira direcionar para a activity principal
-                    startActivity(new Intent(getBaseContext(), CadastroVeiculo.class));
-                    Toast.makeText(getBaseContext(), "Usuario Logado com scesso!!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(MainActivity.this, Qrcode.class);
+                    startActivity(intent);
+                    Toast.makeText(getBaseContext(), "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
                     finish();  //para nao retornar para tela de login
                 } else {
                     String resposta = task.getException().toString();
@@ -165,25 +167,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         });
-    }
-
-
-
-
-
-
-
-    private void abrirTelaQRCode() {
-
-        Intent intent = new Intent(MainActivity.this, Qrcode.class);
-        startActivity(intent);
-
-    }
-
-    private void abrirTelaCadastro() {
-
-        Intent intent = new Intent(MainActivity.this, Cadastro.class);
-        startActivity(intent);
     }
 
 }

@@ -78,7 +78,7 @@ public class Cadastro extends AppCompatActivity implements View.OnClickListener 
 
         if (email.isEmpty() || senha1.isEmpty() || senha2.isEmpty()) {
 
-            Toast.makeText(this, "Preencha os campos Obrigatórios!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Preencha os campos obrigatórios!", Toast.LENGTH_LONG).show();
 
         } else {
 
@@ -90,7 +90,7 @@ public class Cadastro extends AppCompatActivity implements View.OnClickListener 
 
                 }else {
 
-                    Toast.makeText(this, "Erro - Verifique se sua WIffi ou 3g esta funcionando", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "Erro - Certifique-se de estar conectado a internet", Toast.LENGTH_LONG).show();
 
                 }
             }else {
