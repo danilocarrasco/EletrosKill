@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD0000"
+    android:orientation="vertical"
+    tools:context=".Activity.CadastroVeiculo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/stepbarok234"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRO DE VEÍCULO"
+        android:textColor="#c0c0c0"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spMarca"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:autofillHints="Preencha"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spModelo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spCor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spPintura"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Placa:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/etLetras"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="#c0c0c0"
+            android:layout_gravity="center"
+            android:maxLength="3"
+            android:inputType="textCapCharacters"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="-"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/etNumeros"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:background="#c0c0c0"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:text="regitrar veículo"
+        android:textColor="#000000" />
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.Cadastro"
+    android:background="#DD0000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#DD0000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_velcar"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRO DE USUÁRIOS"
+        android:textColor="#c0c0c0"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/cademail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="E-mail"
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/cadsenha1"
+        android:layout_width="match_parent"
+        android:hint="Senha"
+        android:layout_height="60dp"
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/cadsenha2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Repita a senha"
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/cadnome"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nome"
+        android:textColor="#c0c0c0"
+        android:textColorHint="#c0c0c0"
+        android:inputType="text" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncadastrar"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#c0c0c0"
+        android:text="CADASTRAR" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncancelar"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#c0c0c0"
+        android:text="CANCELAR" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvido por Eletroskill Apps - Versao 1.0"
+        android:textColor="#C0C0C0"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+</LinearLayout>
