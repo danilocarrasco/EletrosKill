@@ -2,112 +2,93 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#DD0000"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Activity.MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
-
-        <ImageView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:src="@drawable/logo_velcar" />
+            android:layout_height="200dp">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_velcar" />
 
-    <EditText
-        android:id="@+id/edtemail"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="E-mail"
-        android:textColor="#c0c0c0"
-        android:textColorHint="#c0c0c0"
-        android:inputType="textEmailAddress" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="#c0c0c0"
+            android:textColorHint="#c0c0c0" />
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edtsenha"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Senha"
-        android:textColor="#c0c0c0"
-        android:textColorHint="#c0c0c0"
-        android:inputType="textPassword" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical" />
+        <EditText
+            android:id="@+id/edtsenha"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textColor="#c0c0c0"
+            android:textColorHint="#c0c0c0" />
 
-    <Button
-        android:id="@+id/btncadastro"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:background="#C0C0C0"
-        android:text="LOGIN"
-        android:textAllCaps="false"
-        android:textColor="#000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:orientation="vertical">
-    </LinearLayout>
+        <Button
+            android:id="@+id/btncadastro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#C0C0C0"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/btnnovo"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:background="#C0C0C0"
-        android:text="CADASTRAR USUÁRIO"
-        android:textAllCaps="false"
-        android:textColor="#000000" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:orientation="vertical">
-    </LinearLayout>
+        <Button
+            android:id="@+id/btnnovo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#C0C0C0"
+            android:text="CADASTRAR USUÁRIO"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/btnredefinir"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:background="#C0C0C0"
-        android:text="REDEFINIR SENHA"
-        android:textColor="#000000" />
+        <Button
+            android:id="@+id/btnredefinir"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#C0C0C0"
+            android:text="REDEFINIR SENHA"
+            android:textColor="#000000" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desenvolvido por Eletroskill Apps - Versao 1.0"
+            android:textAlignment="center"
+            android:textColor="#C0C0C0"
+            android:textSize="12sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical">
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Desenvolvido por Eletroskill Apps - Versao 1.0"
-        android:textAlignment="center"
-        android:textColor="#C0C0C0"
-        android:textSize="12sp" />
+    </ScrollView>
 </LinearLayout>

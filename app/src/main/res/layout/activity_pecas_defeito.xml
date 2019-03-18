@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,5 +40,57 @@
         android:layout_width="match_parent"
         android:layout_height="20dp">
     </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/iBtCarFrente"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="#DD0000"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/carrofrente"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/iBtCarTraseira"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="#DD0000"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/carrotraseira"
+            tools:layout_editor_absoluteX="237dp"
+            tools:layout_editor_absoluteY="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/iBtCarEsquerda"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:background="#DD0000"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/carrolateralesquerda"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="150dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/iBtCarDireita"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:background="#DD0000"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/carrolateraldireita"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="300dp"
+            tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
 
 </LinearLayout>

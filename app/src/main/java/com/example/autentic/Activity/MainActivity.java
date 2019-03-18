@@ -50,9 +50,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         auth = FirebaseAuth.getInstance();
 
-
-
-
         btnLogin.setOnClickListener(this);
         btnNovo.setOnClickListener(this);
         btnredefinir.setOnClickListener(this);
