@@ -34,62 +34,81 @@
         android:text="LISTA DE PEÇAS COM DEFEITO"
         android:textColor="#c0c0c0"
         android:textAlignment="center"
-        android:textSize="18sp"/>
+        android:textSize="20dp" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <ImageButton
             android:id="@+id/iBtCarFrente"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
             android:background="#DD0000"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/carrofrente"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="10dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="10dp" />
 
         <ImageButton
             android:id="@+id/iBtCarTraseira"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
             android:background="#DD0000"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/carrotraseira"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="237dp"
-            tools:layout_editor_absoluteY="10dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="10dp" />
 
         <ImageButton
             android:id="@+id/iBtCarEsquerda"
             android:layout_width="250dp"
             android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="209dp"
             android:background="#DD0000"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/carrolateralesquerda"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="80dp"
-            tools:layout_editor_absoluteY="150dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="150dp" />
 
         <ImageButton
             android:id="@+id/iBtCarDireita"
             android:layout_width="250dp"
             android:layout_height="120dp"
+            android:layout_alignTop="@+id/iBtCarEsquerda"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="160dp"
             android:background="#DD0000"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/carrolateraldireita"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="80dp"
-            tools:layout_editor_absoluteY="300dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="300dp" />
 
-    </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
 
 
 

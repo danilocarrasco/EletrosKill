@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Velcar Cadastro de Veículo</string>
+
+    <string-array name="bootstrap_dropdown_Marca">
+        <item>Renault</item>
+        <item>Fiat</item>
+        <item>Chevrolet</item>
+        <item>Citroen</item>
+    </string-array>
+
+    <string-array name="bootstrap_dropdown_Modelo">
+        <item>Sandero</item>
+        <item>Siena</item>
+        <item>Monza</item>
+        <item>C4 Lounge</item>
+    </string-array>
+
+    <string-array name="bootstrap_dropdown_Cor">
+        <item>Preto</item>
+        <item>Prata</item>
+        <item>Branco</item>
+        <item>Amarelo</item>
+    </string-array>
+
+    <string-array name="bootstrap_dropdown_Pintura">
+        <item>Sólida</item>
+        <item>Metalizada</item>
+        <item>Perolizada</item>
+    </string-array>
 </resources>

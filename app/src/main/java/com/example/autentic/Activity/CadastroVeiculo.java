@@ -13,6 +13,8 @@ import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.beardedhen.androidbootstrap.BootstrapButton;
+import com.beardedhen.androidbootstrap.BootstrapDropDown;
 import com.example.autentic.R;
 
 import static android.graphics.Color.colorSpace;
@@ -20,19 +22,12 @@ import static android.graphics.Color.parseColor;
 
 public class CadastroVeiculo extends AppCompatActivity implements View.OnClickListener {
 
-    private Spinner Marca;
-    private Spinner Modelo;
-    private Spinner Cor;
-    private Spinner Pintura;
+    Spinner Marca;
+    Spinner Modelo;
+    Spinner Cor;
+    Spinner Pintura;
 
-    private Button btnRegistra;
-
-
-    String[] marcas = {"Fiat", "Chevrolet", "Citroen", "Subaru", "Volkswagen"};
-    String[] modelos = {"Siena", "C4", "Uno", "Hilux", "Up"};
-    String[] cores = {"Preto", "Branco", "Prata", "Azul", "Amarelo"};
-    String[] pinturas = {"Sólida", "Metálica", "Perolizada"};
-
+    BootstrapButton btnRegistra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,31 +37,31 @@ public class CadastroVeiculo extends AppCompatActivity implements View.OnClickLi
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        btnRegistra = (Button) findViewById(R.id.btnregistrar);
+        btnRegistra = (BootstrapButton) findViewById(R.id.btnregistrar);
         btnRegistra.setOnClickListener(this);
 
         Marca = findViewById(R.id.spMarca);
-        ArrayAdapter<String> adapterMarca = new ArrayAdapter<String>(this, R.layout.spinner_colors, marcas);
+        ArrayAdapter<CharSequence> adapterMarca = ArrayAdapter.createFromResource(this, R.array.bootstrap_dropdown_Marca, R.layout.spinner_colors);
         Marca.setAdapter(adapterMarca);
-        Marca.getBackground().setColorFilter(parseColor("#c0c0c0"), PorterDuff.Mode.SRC_ATOP);
+        Marca.getBackground().setColorFilter(parseColor("#f0f0f0"), PorterDuff.Mode.SRC_ATOP);
         adapterMarca.setDropDownViewResource(R.layout.spinner_dropdown_colors);
 
         Modelo = findViewById(R.id.spModelo);
-        ArrayAdapter<String> adapterModelo = new ArrayAdapter<String>(this, R.layout.spinner_colors, modelos);
+        ArrayAdapter<CharSequence> adapterModelo = ArrayAdapter.createFromResource(this, R.array.bootstrap_dropdown_Modelo, R.layout.spinner_colors);
         Modelo.setAdapter(adapterModelo);
-        Modelo.getBackground().setColorFilter(parseColor("#c0c0c0"), PorterDuff.Mode.SRC_ATOP);
+        Modelo.getBackground().setColorFilter(parseColor("#f0f0f0"), PorterDuff.Mode.SRC_ATOP);
         adapterModelo.setDropDownViewResource(R.layout.spinner_dropdown_colors);
 
         Cor = findViewById(R.id.spCor);
-        ArrayAdapter<String> adapterCor = new ArrayAdapter<String>(this, R.layout.spinner_colors, cores);
+        ArrayAdapter<CharSequence> adapterCor = ArrayAdapter.createFromResource(this, R.array.bootstrap_dropdown_Cor, R.layout.spinner_colors);
         Cor.setAdapter(adapterCor);
-        Cor.getBackground().setColorFilter(parseColor("#c0c0c0"), PorterDuff.Mode.SRC_ATOP);
+        Cor.getBackground().setColorFilter(parseColor("#f0f0f0"), PorterDuff.Mode.SRC_ATOP);
         adapterCor.setDropDownViewResource(R.layout.spinner_dropdown_colors);
 
         Pintura = findViewById(R.id.spPintura);
-        ArrayAdapter<String> adapterPintura = new ArrayAdapter<String>(this, R.layout.spinner_colors, pinturas);
+        ArrayAdapter<CharSequence> adapterPintura = ArrayAdapter.createFromResource(this, R.array.bootstrap_dropdown_Pintura, R.layout.spinner_colors);
         Pintura.setAdapter(adapterPintura);
-        Pintura.getBackground().setColorFilter(parseColor("#c0c0c0"), PorterDuff.Mode.SRC_ATOP);
+        Pintura.getBackground().setColorFilter(parseColor("#f0f0f0"), PorterDuff.Mode.SRC_ATOP);
         adapterPintura.setDropDownViewResource(R.layout.spinner_dropdown_colors);
     }
 
