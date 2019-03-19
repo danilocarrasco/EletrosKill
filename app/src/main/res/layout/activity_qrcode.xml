@@ -3,14 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#DD0000"
     android:orientation="vertical"
     tools:context=".Activity.Qrcode">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,35 +15,34 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:src="@drawable/stepbar1234"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="20dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="450dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:src="@drawable/tag_porta"
-            android:layout_gravity="center"/>
-    </LinearLayout>
+            android:layout_gravity="center"
+            android:layout_margin="20dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnqrcode"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnqrcode"
+            android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="ler qr code" />
+            android:layout_marginTop="40dp"
+            android:text="Ler QR Code"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true" />
 
+    </LinearLayout>
 </LinearLayout>

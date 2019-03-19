@@ -1,94 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="#DD0000"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Activity.MainActivity">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp">
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:src="@drawable/logo_velcar" />
+    </RelativeLayout>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/logo_velcar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
-        </LinearLayout>
-
-        <EditText
+        <com.beardedhen.androidbootstrap.BootstrapEditText
             android:id="@+id/edtemail"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#c0c0c0"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
-            android:textColor="#c0c0c0"
-            android:textColorHint="#c0c0c0" />
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:orientation="vertical">
-
-        </LinearLayout>
-
-        <EditText
+        <com.beardedhen.androidbootstrap.BootstrapEditText
             android:id="@+id/edtsenha"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#c0c0c0"
             android:hint="Senha"
             android:inputType="textPassword"
-            android:textColor="#c0c0c0"
-            android:textColorHint="#c0c0c0" />
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="vertical" />
 
-        <Button
-            android:id="@+id/btncadastro"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#C0C0C0"
-            android:text="LOGIN"
-            android:textAllCaps="false"
-            android:textColor="#000000" />
-
-        <Button
-            android:id="@+id/btnnovo"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#C0C0C0"
-            android:text="CADASTRAR USUÁRIO"
-            android:textAllCaps="false"
-            android:textColor="#000000" />
-
-        <Button
-            android:id="@+id/btnredefinir"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#C0C0C0"
-            android:text="REDEFINIR SENHA"
-            android:textColor="#000000" />
-
-        <TextView
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnlogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Desenvolvido por Eletroskill Apps - Versao 1.0"
-            android:textAlignment="center"
-            android:textColor="#C0C0C0"
-            android:textSize="12sp" />
+            android:layout_marginTop="16dp"
+            android:text="Login"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true" />
 
-    </ScrollView>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnnovo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cadastrar Usuário"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnredefinir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Redefinir Senha"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:text="Desenvolvido por Eletroskill Apps - Versao 1.0"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#C0C0C0"
+        android:textSize="16sp" />
+
+
 </LinearLayout>

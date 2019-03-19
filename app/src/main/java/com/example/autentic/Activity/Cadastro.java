@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.beardedhen.androidbootstrap.BootstrapButton;
 import com.example.autentic.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -18,10 +19,10 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Cadastro extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnCancelar;
-    private Button btncadastrar;
+    private BootstrapButton btnCancelar;
+    private BootstrapButton btncadastrar;
 
-    private EditText cademail, cadsenha1, cadsenha2, cadnome;
+    private EditText Nome, Senha, RepeteSenha, Email;
 
     private FirebaseAuth auth;
 
@@ -34,13 +35,13 @@ public class Cadastro extends AppCompatActivity implements View.OnClickListener 
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        btnCancelar = ( Button ) findViewById(R.id.btncancelar);
-        btncadastrar = ( Button ) findViewById(R.id.btncadastrar);
+        btnCancelar = (BootstrapButton) findViewById(R.id.btncancelar);
+        btncadastrar = (BootstrapButton) findViewById(R.id.btncadastrar);
 
-        cademail = ( EditText ) findViewById(R.id.cademail);
-        cadsenha1 = ( EditText ) findViewById(R.id.cadsenha1);
-        cadsenha2 = ( EditText ) findViewById(R.id.cadsenha2);
-        cadnome = ( EditText ) findViewById(R.id.cadnome);
+        Nome = (EditText) findViewById(R.id.edtnome);
+        Senha = (EditText) findViewById(R.id.edtsenha);
+        RepeteSenha = (EditText) findViewById(R.id.edtrepetesenha);
+        Email = (EditText) findViewById(R.id.edtemail);
 
         btncadastrar.setOnClickListener(this);
         btnCancelar.setOnClickListener(this);
@@ -72,9 +73,9 @@ public class Cadastro extends AppCompatActivity implements View.OnClickListener 
 
     private void cadastrar() {
 
-        String email = cademail.getText().toString().trim();
-        String senha1 = cadsenha1.getText().toString().trim();
-        String senha2 = cadsenha2.getText().toString().trim();
+        String email = Email.getText().toString().trim();
+        String senha1 = Senha.getText().toString().trim();
+        String senha2 = RepeteSenha.getText().toString().trim();
 
         if (email.isEmpty() || senha1.isEmpty() || senha2.isEmpty()) {
 
@@ -90,12 +91,12 @@ public class Cadastro extends AppCompatActivity implements View.OnClickListener 
 
                 }else {
 
-                    Toast.makeText(this, "Erro - Certifique-se de estar conectado a internet", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "Erro - Certifique-se de estar conectado à internet", Toast.LENGTH_LONG).show();
 
                 }
             }else {
 
-                Toast.makeText(this, "Incongruência nas senhas!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "As senhas digitadas não são iguais!", Toast.LENGTH_LONG).show();
 
             }
         }

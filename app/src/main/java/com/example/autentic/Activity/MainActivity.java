@@ -10,6 +10,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.beardedhen.androidbootstrap.BootstrapButton;
 import com.example.autentic.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -25,12 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private EditText edtEmailLogin;
     private EditText edtSenhaLogin;
-    private Button btnLogin;
-    private Button btnNovo;
-    private Button btnredefinir;
-
-
-
+    BootstrapButton btnLogin;
+    BootstrapButton btnNovo;
+    BootstrapButton btnRedefine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,15 +43,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edtSenhaLogin = ( EditText ) findViewById(R.id.edtsenha);
 
         //BOTOES
-        btnLogin = ( Button ) findViewById(R.id.btncadastro);
-        btnNovo = ( Button ) findViewById(R.id.btnnovo);
-        btnredefinir = (Button) findViewById(R.id.btnredefinir);
+        btnLogin = (BootstrapButton) findViewById(R.id.btnlogin);
+        btnNovo = (BootstrapButton) findViewById(R.id.btnnovo);
+        btnRedefine = (BootstrapButton) findViewById(R.id.btnredefinir);
 
         auth = FirebaseAuth.getInstance();
 
         btnLogin.setOnClickListener(this);
         btnNovo.setOnClickListener(this);
-        btnredefinir.setOnClickListener(this);
+        btnRedefine.setOnClickListener(this);
 
     }
 
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()){
 
-            case R.id.btncadastro:
+            case R.id.btnlogin:
 
                 loginEmail();
 

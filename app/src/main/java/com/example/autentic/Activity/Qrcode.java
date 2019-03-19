@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.beardedhen.androidbootstrap.BootstrapButton;
 import com.example.autentic.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -19,7 +20,7 @@ import static com.google.zxing.integration.android.IntentIntegrator.parseActivit
 
 public class Qrcode extends AppCompatActivity {
 
-    Button btnScan;
+    BootstrapButton btnScan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class Qrcode extends AppCompatActivity {
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        btnScan = (Button) findViewById(R.id.btnqrcode);
+        btnScan = (BootstrapButton) findViewById(R.id.btnqrcode);
         final Activity activity = this;
 
         btnScan.setOnClickListener(new View.OnClickListener() {

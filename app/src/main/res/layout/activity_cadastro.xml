@@ -1,115 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="#DD0000"
     android:orientation="vertical"
-    tools:context=".Activity.Cadastro"
-    android:background="#DD0000">
+    tools:context=".Activity.Cadastro">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#DD0000">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:src="@drawable/logo_velcar"/>
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CADASTRO DE USUÁRIOS"
-        android:textColor="#c0c0c0"
-        android:textAlignment="center"
-        android:textSize="18sp"/>
-
-    <EditText
-        android:id="@+id/cademail"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="E-mail"
-        android:textColor="#c0c0c0"
-        android:textColorHint="#c0c0c0"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/cadsenha1"
-        android:layout_width="match_parent"
-        android:hint="Senha"
-        android:layout_height="60dp"
-        android:textColor="#c0c0c0"
-        android:textColorHint="#c0c0c0"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/cadsenha2"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Repita a senha"
-        android:textColor="#c0c0c0"
-        android:textColorHint="#c0c0c0"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/cadnome"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Nome"
-        android:textColor="#c0c0c0"
-        android:textColorHint="#c0c0c0"
-        android:inputType="text" />
-
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:orientation="vertical">
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btncadastrar"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:background="#c0c0c0"
-        android:text="CADASTRAR" />
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:src="@drawable/logo_velcar" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:orientation="vertical">
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btncancelar"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:background="#c0c0c0"
-        android:text="CANCELAR" />
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_gravity="center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="CADASTRO DE USUÁRIOS"
+            android:textAlignment="center"
+            android:textColor="#c0c0c0"
+            android:textSize="20dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edtnome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#c0c0c0"
+            android:hint="Nome"
+            android:inputType="textEmailAddress"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#c0c0c0"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edtsenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#c0c0c0"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/edtrepetesenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#c0c0c0"
+            android:hint="Repita a senha"
+            android:inputType="textPassword"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btncadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Cadastrar"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true" />
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btncancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cancelar"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true" />
+
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Desenvolvido por Eletroskill Apps - Versao 1.0"
-        android:textColor="#C0C0C0"
-        android:textAlignment="center"
-        android:textSize="12sp" />
-
 </LinearLayout>
