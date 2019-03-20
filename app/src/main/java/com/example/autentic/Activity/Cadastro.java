@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.concurrent.Delayed;
+
 public class Cadastro extends AppCompatActivity implements View.OnClickListener {
 
     private BootstrapButton btnCancelar;
@@ -111,6 +113,8 @@ public class Cadastro extends AppCompatActivity implements View.OnClickListener 
                 if(task.isSuccessful()){
 
                     Toast.makeText(getBaseContext(), "Cadastro realizado com sucesso!", Toast.LENGTH_LONG).show();
+                    Intent voltar = new Intent(Cadastro.this, MainActivity.class);
+                    startActivity(voltar);
 
 
                 }else {

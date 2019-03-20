@@ -3,6 +3,7 @@
     package="com.example.autentic">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icone"
@@ -10,7 +11,8 @@
         android:roundIcon="@mipmap/icone_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.PecasDefeito"></activity>
+        <activity android:name=".Activity.CarroFrente"></activity>
+        <activity android:name=".Activity.PecasDefeito" />
         <activity android:name=".Activity.CadastroVeiculo" />
         <activity android:name=".Activity.Qrcode" />
         <activity android:name=".Activity.MainActivity" />

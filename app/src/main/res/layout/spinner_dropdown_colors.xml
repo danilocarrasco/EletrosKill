@@ -8,7 +8,9 @@
     android:ellipsize="marquee"
     android:textColor="#000000"
     android:background="#F0F0F0"
+    android:textSize="16dp"
+    android:layout_margin="20dp"
     android:padding="10dp"
-    android:textSize="20dp"
-    android:layout_margin="20dp">
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical">
 </CheckedTextView>

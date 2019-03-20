@@ -43,7 +43,7 @@ public class CadastroVeiculo extends AppCompatActivity implements View.OnClickLi
         Marca = findViewById(R.id.spMarca);
         ArrayAdapter<CharSequence> adapterMarca = ArrayAdapter.createFromResource(this, R.array.bootstrap_dropdown_Marca, R.layout.spinner_colors);
         Marca.setAdapter(adapterMarca);
-        Marca.getBackground().setColorFilter(parseColor("#f0f0f0"), PorterDuff.Mode.SRC_ATOP);
+        Marca.getBackground().setColorFilter(parseColor("White"), PorterDuff.Mode.SRC_ATOP);
         adapterMarca.setDropDownViewResource(R.layout.spinner_dropdown_colors);
 
         Modelo = findViewById(R.id.spModelo);
@@ -74,8 +74,6 @@ public class CadastroVeiculo extends AppCompatActivity implements View.OnClickLi
 
                 Intent intent = new Intent(this, PecasDefeito.class);
                 startActivity(intent);
-                finish();
-
                 break;
 
 

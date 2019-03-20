@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,144 +10,148 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
+        android:layout_height="100dp"
+        android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:src="@drawable/stepbarok234"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/stepbarok234" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:text="CADASTRO DE VEÍCULO"
-        android:textColor="#c0c0c0"
         android:textAlignment="center"
-        android:textSize="18sp"/>
+        android:textColor="#f0f0f0"
+        android:textSize="20dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Spinner
+            android:id="@+id/spModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Spinner
+            android:id="@+id/spCor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Spinner
+            android:id="@+id/spPintura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spMarca"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
-
-    <Spinner
-        android:id="@+id/spModelo"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
-
-    <Spinner
-        android:id="@+id/spCor"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
-
-    <Spinner
-        android:id="@+id/spPintura"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="68dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="69dp"
+            android:layout_marginLeft="69dp"
             android:padding="10dp"
-            android:layout_gravity="center"
-            android:text="Placa:"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="0dp"
+            android:text="PLACA:"
+            android:textColor="#f0f0f0"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="59dp"
             tools:layout_editor_absoluteY="0dp" />
 
-        <EditText
+        <com.beardedhen.androidbootstrap.BootstrapEditText
             android:id="@+id/etLetras"
-            android:layout_width="60dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="194dp"
+            android:layout_marginRight="194dp"
             android:background="#c0c0c0"
-            android:layout_gravity="center"
-            android:maxLength="3"
+            android:hint="XXX"
             android:inputType="textCapCharacters"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:textColor="#000000"
-            android:textSize="20sp" />
+            app:bootstrapBrand="regular"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="4dp" />
 
         <TextView
-            android:layout_width="34dp"
-            android:layout_height="40dp"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="166dp"
+            android:layout_marginRight="166dp"
             android:padding="10dp"
             android:text="-"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="129dp"
+            android:textSize="24dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="211dp"
             tools:layout_editor_absoluteY="0dp" />
 
-        <EditText
+        <com.beardedhen.androidbootstrap.BootstrapEditText
             android:id="@+id/etNumeros"
-            android:layout_width="85dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="90dp"
+            android:layout_marginRight="90dp"
             android:background="#c0c0c0"
-            android:layout_gravity="center"
+            android:hint="0000"
             android:inputType="number"
-            android:maxLength="4"
-            tools:layout_editor_absoluteX="150dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:textColor="#000000"
-            android:textSize="20sp"/>
+            app:bootstrapBrand="regular"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            tools:ignore="DuplicateIds,MissingConstraints"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="4dp" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical" />
-
-    <Button
-        android:id="@+id/btnregistrar"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:background="#C0C0C0"
-        android:text="regitrar veículo"
-        android:textColor="#000000" />
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
-
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnregistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Registrar Veículo"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+    </LinearLayout>
 </LinearLayout>

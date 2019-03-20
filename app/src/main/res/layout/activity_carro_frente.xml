@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD0000"
+    android:orientation="vertical"
+    tools:context=".Activity.Qrcode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:src="@drawable/carrofrente" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="PEÇAS COM DEFEITO"
+            android:textAlignment="center"
+            android:textColor="#f0f0f0"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbParachoque"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:outlineAmbientShadowColor="#00ff00"
+                    android:outlineSpotShadowColor="#ff00ff"
+                    android:text="Parachoque"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SParachoque"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbCapo"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Capô"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SCapo"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbFarolEsquerda"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Farol Esquerdo"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SFarolEsquerda"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbFarolDireita"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Farol Direito"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SFarolDireita"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbGradeFrontal"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Grade Frontal"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SGradeFrontal"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbFriso"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Friso Frontal"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SFriso"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbFarolNeblina"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Farol Neblina"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SFarolNeblina"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btFinalizar"
+                style="@style/Animation.AppCompat.DropDownUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="80dp"
+                android:text="FINALIZAR" />
+
+            <TextView
+                android:id="@+id/ver_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="#c0c0c0"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
