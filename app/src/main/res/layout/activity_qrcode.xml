@@ -23,17 +23,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="16dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:src="@drawable/tag_porta"
             android:layout_gravity="center"
-            android:layout_margin="20dp" />
+            android:layout_margin="10dp" />
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/btnqrcode"
+            android:id="@+id/btQRcode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -43,6 +45,18 @@
             app:buttonMode="regular"
             app:roundedCorners="true"
             app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btCancelaQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Cancelar"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true" />
 
     </LinearLayout>
 </LinearLayout>

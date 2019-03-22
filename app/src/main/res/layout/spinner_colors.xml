@@ -5,14 +5,14 @@
     android:id="@android:id/text1"
     android:layout_margin="20dp"
     android:layout_height="50dp"
-    android:textColorHint="#c0c0c0"
+    android:textColorHint="#f0f0f0"
     android:layout_width="match_parent"
     android:textSize="16dp"
     android:textColor="#F0F0F0"
-    android:shadowColor="#c0c0c0"
+    android:shadowColor="#f0f0f0"
     android:padding="10dp"
-    android:text="Preencha"
     android:background="#dd0000"
     android:layout_gravity="center_vertical"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:hint="....">
 </TextView>

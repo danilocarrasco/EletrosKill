@@ -32,12 +32,36 @@ public class PecasDefeito extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(PecasDefeito.this, CarroFrente.class);
                 startActivity(intent);
+
+
             }
         });
 
         Traseira = (ImageButton) findViewById(R.id.iBtCarTraseira);
+        Traseira.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PecasDefeito.this, CarroTraseira.class);
+                startActivity(intent);
+            }
+        });
+
         Ldireita = (ImageButton) findViewById(R.id.iBtCarDireita);
+        Ldireita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PecasDefeito.this, CarroLateralDireita.class);
+                startActivity(intent);
+            }
+        });
         Lesquerda = (ImageButton) findViewById(R.id.iBtCarEsquerda);
+        Lesquerda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PecasDefeito.this, CarroLateralEsquerda.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

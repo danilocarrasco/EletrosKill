@@ -10,11 +10,6 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp">
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="100dp">
         <ImageView
             android:layout_width="match_parent"
@@ -32,13 +27,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SELECIONE A PARTE DO CARRO"
+        android:textStyle="bold"
         android:textColor="#f0f0f0"
         android:textAlignment="center"
         android:textSize="20dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/iBtCarFrente"
@@ -49,7 +45,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="60dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="33dp"
             android:background="#DD0000"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/carrofrente"
@@ -64,7 +60,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="33dp"
             android:layout_marginEnd="60dp"
             android:layout_marginRight="60dp"
             android:background="#DD0000"
@@ -83,7 +79,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="80dp"
             android:layout_marginLeft="80dp"
-            android:layout_marginTop="209dp"
+            android:layout_marginTop="182dp"
             android:background="#DD0000"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/carrolateralesquerda"
@@ -110,6 +106,24 @@
 
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btConcluiOrçamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:text="Concluir Orçamento"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+    </LinearLayout>
 
 
 </LinearLayout>

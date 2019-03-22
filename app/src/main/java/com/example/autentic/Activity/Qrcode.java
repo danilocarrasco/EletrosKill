@@ -20,7 +20,8 @@ import static com.google.zxing.integration.android.IntentIntegrator.parseActivit
 
 public class Qrcode extends AppCompatActivity {
 
-    BootstrapButton btnScan;
+    BootstrapButton btScan;
+    BootstrapButton btCancelaScan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +31,25 @@ public class Qrcode extends AppCompatActivity {
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        btnScan = (BootstrapButton) findViewById(R.id.btnqrcode);
+        btScan = (BootstrapButton) findViewById(R.id.btQRcode);
         final Activity activity = this;
 
-        btnScan.setOnClickListener(new View.OnClickListener() {
+        btScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 IntentIntegrator integrator = new IntentIntegrator(activity);
                 integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
                 integrator.setCameraId(0);
                 integrator.initiateScan();
+            }
+        });
+
+        btCancelaScan = (BootstrapButton) findViewById(R.id.btCancelaQR);
+        btCancelaScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Qrcode.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 

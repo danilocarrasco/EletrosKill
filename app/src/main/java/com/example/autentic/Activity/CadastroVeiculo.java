@@ -3,10 +3,12 @@ package com.example.autentic.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.opengl.Visibility;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.SimpleAdapter;
@@ -63,6 +65,7 @@ public class CadastroVeiculo extends AppCompatActivity implements View.OnClickLi
         Pintura.setAdapter(adapterPintura);
         Pintura.getBackground().setColorFilter(parseColor("#f0f0f0"), PorterDuff.Mode.SRC_ATOP);
         adapterPintura.setDropDownViewResource(R.layout.spinner_dropdown_colors);
+
     }
 
     @Override

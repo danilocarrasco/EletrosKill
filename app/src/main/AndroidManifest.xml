@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/icone_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.CarroFrente"></activity>
+        <activity android:name=".Activity.CarroLateralEsquerda"></activity>
+        <activity android:name=".Activity.CarroLateralDireita" />
+        <activity android:name=".Activity.CarroTraseira" />
+        <activity android:name=".Activity.CarroFrente" />
         <activity android:name=".Activity.PecasDefeito" />
         <activity android:name=".Activity.CadastroVeiculo" />
         <activity android:name=".Activity.Qrcode" />

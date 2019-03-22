@@ -33,8 +33,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="CADASTRO DE USUÁRIOS"
+            android:textStyle="bold"
             android:textAlignment="center"
-            android:textColor="#c0c0c0"
+            android:textColor="#f0f0f0"
             android:textSize="20dp" />
 
         <com.beardedhen.androidbootstrap.BootstrapEditText
@@ -45,7 +46,7 @@
             android:background="#c0c0c0"
             android:hint="Nome"
             android:inputType="textEmailAddress"
-            app:bootstrapBrand="info"
+            app:bootstrapBrand="regular"
             app:bootstrapSize="xl"
             app:roundedCorners="true" />
 
@@ -57,7 +58,7 @@
             android:background="#c0c0c0"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
-            app:bootstrapBrand="info"
+            app:bootstrapBrand="regular"
             app:bootstrapSize="xl"
             app:roundedCorners="true" />
 
@@ -69,7 +70,7 @@
             android:background="#c0c0c0"
             android:hint="Senha"
             android:inputType="textPassword"
-            app:bootstrapBrand="info"
+            app:bootstrapBrand="regular"
             app:bootstrapSize="xl"
             app:roundedCorners="true" />
 
@@ -81,7 +82,7 @@
             android:background="#c0c0c0"
             android:hint="Repita a senha"
             android:inputType="textPassword"
-            app:bootstrapBrand="info"
+            app:bootstrapBrand="regular"
             app:bootstrapSize="xl"
             app:roundedCorners="true" />
 
@@ -89,7 +90,7 @@
             android:id="@+id/btncadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:text="Cadastrar"
             app:bootstrapBrand="success"
             app:bootstrapSize="xl"
@@ -102,7 +103,7 @@
             android:id="@+id/btncancelar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="Cancelar"
             app:bootstrapBrand="danger"
             app:bootstrapSize="xl"

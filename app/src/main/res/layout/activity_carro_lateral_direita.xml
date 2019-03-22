@@ -17,7 +17,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_margin="30dp"
-            android:src="@drawable/carrofrente" />
+            android:src="@drawable/carrolateraldireita" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,22 +52,21 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cbParachoqueDianteiro"
+                    android:id="@+id/cbPLDianteiro"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:buttonTint="#f0f0f0"
-                    android:text="Parachoque"
+                    android:text="Pára-Lama Dianteiro"
                     android:textColor="#f0f0f0"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical" />
 
                 <Spinner
-                    android:id="@+id/SParachoqueDianteiro"
+                    android:id="@+id/SPLDianteiro"
                     android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center" />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
 
@@ -77,43 +76,19 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cbCapo"
+                    android:id="@+id/cbPLTraseiro"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:buttonTint="#f0f0f0"
-                    android:text="Capô"
+                    android:text="Pára-Lama Traseiro"
                     android:textColor="#f0f0f0"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical" />
 
                 <Spinner
-                    android:id="@+id/SCapo"
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cbFarolEsquerda"
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:buttonTint="#f0f0f0"
-                    android:text="Farol Esquerdo"
-                    android:textColor="#f0f0f0"
-                    android:textSize="16dp"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="center_vertical" />
-
-                <Spinner
-                    android:id="@+id/SFarolEsquerda"
+                    android:id="@+id/SPLTraseiro"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center" />
@@ -125,19 +100,19 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cbFarolDireita"
+                    android:id="@+id/cbFrisoPLDianteiro"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:buttonTint="#f0f0f0"
-                    android:text="Farol Direito"
+                    android:text="Friso Dianteiro"
                     android:textColor="#f0f0f0"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical" />
 
                 <Spinner
-                    android:id="@+id/SFarolDireita"
+                    android:id="@+id/SFrisoPLDianteiro"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center" />
@@ -149,19 +124,19 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cbGradeFrontal"
+                    android:id="@+id/cbFrisoPLTraseiro"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:buttonTint="#f0f0f0"
-                    android:text="Grade Frontal"
+                    android:text="Friso Traseiro"
                     android:textColor="#f0f0f0"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical" />
 
                 <Spinner
-                    android:id="@+id/SGradeFrontal"
+                    android:id="@+id/SFrisoPLTraseiro"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center" />
@@ -173,19 +148,19 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cbCaixaAr"
+                    android:id="@+id/cbRodaDianteira"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:buttonTint="#f0f0f0"
-                    android:text="Caixa de Ar"
+                    android:text="Roda Dianteira"
                     android:textColor="#f0f0f0"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical" />
 
                 <Spinner
-                    android:id="@+id/SCaixaAr"
+                    android:id="@+id/SRodaDianteira"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center" />
@@ -197,19 +172,19 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cbFriso"
+                    android:id="@+id/cbRodaTraseira"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:buttonTint="#f0f0f0"
-                    android:text="Friso Frontal"
+                    android:text="Roda Traseira"
                     android:textColor="#f0f0f0"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical" />
 
                 <Spinner
-                    android:id="@+id/SFriso"
+                    android:id="@+id/SRodaTraseira"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center" />
@@ -221,19 +196,163 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/cbFarolNeblina"
+                    android:id="@+id/cbRetrovisor"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:buttonTint="#f0f0f0"
-                    android:text="Farol Neblina"
+                    android:text="Retrovisor"
                     android:textColor="#f0f0f0"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical" />
 
                 <Spinner
-                    android:id="@+id/SFarolNeblina"
+                    android:id="@+id/SRetrovisor"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbPorta"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Porta"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SPorta"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbMaçaneta"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Maçaneta"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SMaçaneta"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbFrisoPorta"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Friso da Porta"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SFrisoPorta"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbColunaCentral"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Coluna Central"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SColunaCentral"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbColunaDianteira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Coluna Dianteira"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SColunaDianteira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbColunaTraseira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:text="Coluna Traseira"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:id="@+id/SColunaTraseira"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center" />
@@ -247,7 +366,7 @@
         android:orientation="vertical">
 
         <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/btOrçamentoFrente"
+            android:id="@+id/btOrçamentoLD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -259,4 +378,5 @@
             app:roundedCorners="true"
             app:showOutline="false" />
     </LinearLayout>
+
 </LinearLayout>
