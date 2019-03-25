@@ -11,26 +11,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:src="@drawable/stepbarokok34"
             android:layout_gravity="center"
-            android:contentDescription="TODO" />
+            android:contentDescription="TODO"
+            android:src="@drawable/stepbarokok34" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SELECIONE A PARTE DO CARRO"
-        android:textStyle="bold"
-        android:textColor="#f0f0f0"
-        android:textAlignment="center"
-        android:textSize="20dp" />
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="SELECIONE O LADO DO CARRO"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#f0f0f0"
+            android:textSize="20dp" />
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
